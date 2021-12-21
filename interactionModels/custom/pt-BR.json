@@ -1,0 +1,266 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "adivinhe a palavra do meu amigo",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AskWordIntent",
+          "slots": [
+            {
+              "name": "keyWord",
+              "type": "FourThingsType"
+            }
+          ],
+          "samples": [
+            "{keyWord}",
+            "é a palavra {keyWord}",
+            "palavra {keyWord}",
+            "{keyWord} é a palavra",
+            "a palavra é {keyWord} "
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "acertou",
+            "já",
+            "quero",
+            "podemos"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Quatro"
+              }
+            },
+            {
+              "name": {
+                "value": "Porta",
+                "synonyms": [
+                  "Portão"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Skate",
+                "synonyms": [
+                  "Skateboard",
+                  "Longboard"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Quadriciclo"
+              }
+            },
+            {
+              "name": {
+                "value": "Dinossauro"
+              }
+            },
+            {
+              "name": {
+                "value": "Girafa"
+              }
+            },
+            {
+              "name": {
+                "value": "Camelo",
+                "synonyms": [
+                  "Dromedário"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Cavalo",
+                "synonyms": [
+                  "Burro",
+                  "Pônei",
+                  "Jumento",
+                  "Égua"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Quarto"
+              }
+            },
+            {
+              "name": {
+                "value": "Quadro"
+              }
+            },
+            {
+              "name": {
+                "value": "Coelho",
+                "synonyms": [
+                  "Lebre"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Tartaruga",
+                "synonyms": [
+                  "Jabuti",
+                  "Cágado"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Parede"
+              }
+            },
+            {
+              "name": {
+                "value": "Leão",
+                "synonyms": [
+                  "Leoa"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Boi",
+                "synonyms": [
+                  "Bezerro"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Vaca",
+                "synonyms": [
+                  "Bezerra"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Toldo"
+              }
+            },
+            {
+              "name": {
+                "value": "Kombi"
+              }
+            },
+            {
+              "name": {
+                "value": "Cachorro",
+                "synonyms": [
+                  "Cão"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Gato"
+              }
+            },
+            {
+              "name": {
+                "value": "Quadrado",
+                "synonyms": [
+                  "Quadrilátero"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Cama"
+              }
+            },
+            {
+              "name": {
+                "value": "Drone",
+                "synonyms": [
+                  "Quadricóptero"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Elefante",
+                "synonyms": [
+                  "Mamute"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Onça",
+                "synonyms": [
+                  "Guepardo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Tigre"
+              }
+            },
+            {
+              "name": {
+                "value": "Banco",
+                "synonyms": [
+                  "Banqueta"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Cadeira"
+              }
+            },
+            {
+              "name": {
+                "value": "Mesa"
+              }
+            },
+            {
+              "name": {
+                "value": "Carro"
+              }
+            }
+          ],
+          "name": "FourThingsType"
+        }
+      ]
+    }
+  },
+  "version": "14"
+}
