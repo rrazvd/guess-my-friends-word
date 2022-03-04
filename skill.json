@@ -2,10 +2,56 @@
   "manifest": {
     "publishingInformation": {
       "locales": {
+        "en-US": {
+          "summary": "Play to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says.",
+          "examplePhrases": [
+            "Alexa, open guess my friend\u0027s word",
+            "Alexa, start guess my friend\u0027s word",
+            "Alexa, play guess my friend\u0027s word"
+          ],
+          "keywords": [
+            "guess",
+            "word",
+            "friend",
+            "magic",
+            "mystery",
+            "pact",
+            "brain",
+            "connect"
+          ],
+          "name": "Guess my friend\u0027s word",
+          "description": "** ESSENTIAL READING TO UNDERSTAND HOW SKILL WORKS**\nPlay to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says. Your friend whispers a word in your ear and you quote random words to Alexa, including the correct word, until Alexa hits it with an established TRICK.\n\nIt works like this:\n1 - You activate the Skill: \"Alexa, guess my friend\u0027s word\";\n2 - Alexa asks your friend to whisper a word to you (let\u0027s assume he said the word \"Phone\");\n3 - Alexa stages a \"brain connection\", and when establishing it asks you to say random words;\n4 - You say a random word, for example \"Is the word potato?\";\n5 - Alexa will respond that it is not the correct word and will ask for another word;\n6 - And in that steps 4 and 5 keep repeating, until you want Alexa to hit your friend\u0027s word through the TRICK.\n\nTRICK:\nThe trick for Alexa to get it right is in the word preceding your friend\u0027s word. This antecedent word must have the sense of having something with the number 4, for example: car (has four wheels), lion (has four legs), table (has four legs) among other possibilities (see below for a list with more words ).\n\nThat is, in the example of the word \"Phone\" the antecedent word can be \"Car\", for example, and so Alexa will hit the word of your friend.\n\nTIP:\nTest the skill and learn to use it before playing the game with your friend for a better experience!\n\nMore words to perform the TRICK:\nDoor\nSkate\nQuadricycle\nDinosaur\nGiraffe\nCamel\nHorse\nRoom\nFrame\nRabbit\nTurtle\nWall\nLion\nOx\nCow\nAwning\nVan\nDog\nCat\nSquare\nBed\nDrone\nElephant\nJaguar\nTiger\nSeat\nChair\nDesk\nCar",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        },
+        "en-CA": {
+          "summary": "Play to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says.",
+          "examplePhrases": [
+            "Alexa, open guess my friend\u0027s word",
+            "Alexa, start guess my friend\u0027s word",
+            "Alexa, play guess my friend\u0027s word"
+          ],
+          "keywords": [
+            "guess",
+            "word",
+            "friend",
+            "magic",
+            "mystery",
+            "pact",
+            "brain",
+            "connect"
+          ],
+          "name": "Guess my friend\u0027s word",
+          "description": "** ESSENTIAL READING TO UNDERSTAND HOW SKILL WORKS**\nPlay to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says. Your friend whispers a word in your ear and you quote random words to Alexa, including the correct word, until Alexa hits it with an established TRICK.\n\nIt works like this:\n1 - You activate the Skill: \"Alexa, guess my friend\u0027s word\";\n2 - Alexa asks your friend to whisper a word to you (let\u0027s assume he said the word \"Phone\");\n3 - Alexa stages a \"brain connection\", and when establishing it asks you to say random words;\n4 - You say a random word, for example \"Is the word potato?\";\n5 - Alexa will respond that it is not the correct word and will ask for another word;\n6 - And in that steps 4 and 5 keep repeating, until you want Alexa to hit your friend\u0027s word through the TRICK.\n\nTRICK:\nThe trick for Alexa to get it right is in the word preceding your friend\u0027s word. This antecedent word must have the sense of having something with the number 4, for example: car (has four wheels), lion (has four legs), table (has four legs) among other possibilities (see below for a list with more words ).\n\nThat is, in the example of the word \"Phone\" the antecedent word can be \"Car\", for example, and so Alexa will hit the word of your friend.\n\nTIP:\nTest the skill and learn to use it before playing the game with your friend for a better experience!\n\nMore words to perform the TRICK:\nDoor\nSkate\nQuadricycle\nDinosaur\nGiraffe\nCamel\nHorse\nRoom\nFrame\nRabbit\nTurtle\nWall\nLion\nOx\nCow\nAwning\nVan\nDog\nCat\nSquare\nBed\nDrone\nElephant\nJaguar\nTiger\nSeat\nChair\nDesk\nCar",
+          "smallIconUri": "file://assets/images/en-CA_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-CA_largeIconUri.png"
+        },
         "pt-BR": {
           "summary": "Brincadeira para impressionar seus amigos: você e a Alexa estabelece uma conexão cerebral, que a permite adivinhar a palavra dita pelo seu amigo.",
           "examplePhrases": [
-            "Alexa, abra adivinhe a palavra do meu amigo"
+            "Alexa, abra adivinhe a palavra do meu amigo",
+            "Alexa, começar adivinhe a palavra do meu amigo",
+            "Alexa, jogar adivinhe a palavra do meu amigo"
           ],
           "keywords": [
             "adivinhe",
@@ -18,40 +64,174 @@
           "name": "Adivinhe a palavra do meu amigo",
           "description": "** LEITURA INDISPENSÁVEL PARA ENTENDER COMO A SKILL FUNCIONA**\nBrincadeira para impressionar seus amigos: você e a Alexa estabelece uma conexão cerebral, que a permite adivinhar a palavra dita pelo seu amigo. O seu amigo te sussurra uma palavra no ouvido e você cita para a Alexa palavras aleatórias, dentre elas a palavra correta, até ela acertar através de um TRUQUE estabelecido.\n\nFunciona assim:\n1 - Você ativa a Skill: \"Alexa, adivinhe a palavra do meu amigo\";\n2 - A Alexa pede para seu amigo te sussurrar uma palavra (vamos supor que ele falou a palavra \"Celular\");\n3 - A Alexa encena uma \"conexão cerebral\", e ao estabelecer te pede para falar palavras aleatórias;\n4 - Você fala uma palavra aleatória, por exemplo \"A palavra é batata?\";\n5 - A Alexa responderá que não é a palavra correta e pedirá outra palavra;\n6 - E nisso os passos 4 e 5 ficam repetindo, até que você queira que a Alexa acerte a palavra do seu amigo através do TRUQUE.\n\nTRUQUE: \nO truque para a Alexa acertar está na palavra antecedente a palavra do seu amigo. Essa palavra antecedente deve possuir o sentido de ter haver algo com o número 4, por exemplo: carro (tem quatro rodas), leão (tem quatro patas), mesa (tem quatro pernas) dentre outras possibilidades (confira abaixo uma lista com mais palavras).\n\nOu seja, no exemplo da palavra \"Celular\" basta a palavra antecedente ser \"Carro\", por exemplo, e assim a Alexa irá acertar a palavra do seu amigo.\n\nDICA:\nTeste a skill e aprenda a utiliza-la antes de fazer a brincadeira com seu amigo para ter uma melhor experiência!\n\nMais palavras para realizar o TRUQUE:\n\nPorta\nSkate\nQuadriciclo\nDinossauro\nGirafa\nCamelo\nCavalo\nQuarto\nQuadro\nCoelho\nTartaruga\nParede\nLeão\nBoi\nVaca\nToldo\nKombi\nCachorro\nGato\nQuadrado\nCama\nDrone\nElefante\nOnça\nTigre\nBanco\nCadeira\nMesa\nCarro",
           "smallIconUri": "file://assets/images/pt-BR_smallIconUri.png",
-          "updatesDescription": "* Novas palavras-chave para realizar o truque.\n* Inserção de elementos que acarreta em maior entretenimento e dinamismo a skill.\n* Implementa a opção de jogar novamente e de dar outra chance à Alexa.",
           "largeIconUri": "file://assets/images/pt-BR_largeIconUri.png"
+        },
+        "en-IN": {
+          "summary": "Play to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says.",
+          "examplePhrases": [
+            "Alexa, open guess my friend\u0027s word",
+            "Alexa, start guess my friend\u0027s word",
+            "Alexa, play guess my friend\u0027s word"
+          ],
+          "keywords": [
+            "guess",
+            "word",
+            "friend",
+            "magic",
+            "mystery",
+            "pact",
+            "brain",
+            "connect"
+          ],
+          "name": "Guess my friend\u0027s word",
+          "description": "** ESSENTIAL READING TO UNDERSTAND HOW SKILL WORKS**\nPlay to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says. Your friend whispers a word in your ear and you quote random words to Alexa, including the correct word, until Alexa hits it with an established TRICK.\n\nIt works like this:\n1 - You activate the Skill: \"Alexa, guess my friend\u0027s word\";\n2 - Alexa asks your friend to whisper a word to you (let\u0027s assume he said the word \"Phone\");\n3 - Alexa stages a \"brain connection\", and when establishing it asks you to say random words;\n4 - You say a random word, for example \"Is the word potato?\";\n5 - Alexa will respond that it is not the correct word and will ask for another word;\n6 - And in that steps 4 and 5 keep repeating, until you want Alexa to hit your friend\u0027s word through the TRICK.\n\nTRICK:\nThe trick for Alexa to get it right is in the word preceding your friend\u0027s word. This antecedent word must have the sense of having something with the number 4, for example: car (has four wheels), lion (has four legs), table (has four legs) among other possibilities (see below for a list with more words ).\n\nThat is, in the example of the word \"Phone\" the antecedent word can be \"Car\", for example, and so Alexa will hit the word of your friend.\n\nTIP:\nTest the skill and learn to use it before playing the game with your friend for a better experience!\n\nMore words to perform the TRICK:\nDoor\nSkate\nQuadricycle\nDinosaur\nGiraffe\nCamel\nHorse\nRoom\nFrame\nRabbit\nTurtle\nWall\nLion\nOx\nCow\nAwning\nVan\nDog\nCat\nSquare\nBed\nDrone\nElephant\nJaguar\nTiger\nSeat\nChair\nDesk\nCar",
+          "smallIconUri": "file://assets/images/en-IN_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-IN_largeIconUri.png"
+        },
+        "en-AU": {
+          "summary": "Play to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says.",
+          "examplePhrases": [
+            "Alexa, open guess my friend\u0027s word",
+            "Alexa, start guess my friend\u0027s word",
+            "Alexa, play guess my friend\u0027s word"
+          ],
+          "keywords": [
+            "guess",
+            "word",
+            "friend",
+            "magic",
+            "mystery",
+            "pact",
+            "brain",
+            "connect"
+          ],
+          "name": "Guess my friend\u0027s word",
+          "description": "** ESSENTIAL READING TO UNDERSTAND HOW SKILL WORKS**\nPlay to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says. Your friend whispers a word in your ear and you quote random words to Alexa, including the correct word, until Alexa hits it with an established TRICK.\n\nIt works like this:\n1 - You activate the Skill: \"Alexa, guess my friend\u0027s word\";\n2 - Alexa asks your friend to whisper a word to you (let\u0027s assume he said the word \"Phone\");\n3 - Alexa stages a \"brain connection\", and when establishing it asks you to say random words;\n4 - You say a random word, for example \"Is the word potato?\";\n5 - Alexa will respond that it is not the correct word and will ask for another word;\n6 - And in that steps 4 and 5 keep repeating, until you want Alexa to hit your friend\u0027s word through the TRICK.\n\nTRICK:\nThe trick for Alexa to get it right is in the word preceding your friend\u0027s word. This antecedent word must have the sense of having something with the number 4, for example: car (has four wheels), lion (has four legs), table (has four legs) among other possibilities (see below for a list with more words ).\n\nThat is, in the example of the word \"Phone\" the antecedent word can be \"Car\", for example, and so Alexa will hit the word of your friend.\n\nTIP:\nTest the skill and learn to use it before playing the game with your friend for a better experience!\n\nMore words to perform the TRICK:\nDoor\nSkate\nQuadricycle\nDinosaur\nGiraffe\nCamel\nHorse\nRoom\nFrame\nRabbit\nTurtle\nWall\nLion\nOx\nCow\nAwning\nVan\nDog\nCat\nSquare\nBed\nDrone\nElephant\nJaguar\nTiger\nSeat\nChair\nDesk\nCar",
+          "smallIconUri": "file://assets/images/en-AU_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-AU_largeIconUri.png"
+        },
+        "es-ES": {
+          "summary": "Juega para impresionar a tus amigos: tú y Alexa establecen una conexión cerebral, lo que le permite adivinar la palabra que dice tu amigo.",
+          "examplePhrases": [
+            "Alexa, abre adivina la palabra de mi amigo"
+          ],
+          "keywords": [
+            "adivinar",
+            "palabra",
+            "amigo",
+            "magia",
+            "misterio",
+            "pacto",
+            "conexión",
+            "cerebro"
+          ],
+          "name": "Adivina la palabra de mi amigo",
+          "description": "** LECTURA ESENCIAL PARA ENTENDER CÓMO FUNCIONA LA SKILL **\nJuega para impresionar a tus amigos: tú y Alexa establecen una conexión cerebral, lo que le permite adivinar la palabra que dice tu amigo. Tu amigo te susurra una palabra al oído y tú le dices palabras al azar a Alexa, incluida la palabra correcta, hasta que Alexa le da un TRUCO establecido.\n\nFunciona así:\n1 - Activas la Skill: \"Alexa, adivina la palabra de mi amigo\";\n2 - Alexa le pide a tu amigo que te susurre una palabra (supongamos que dijo la palabra \"Móvil\");\n3 - Alexa realiza una \"conexión cerebral\", y al establecerla te pide que digas palabras al azar;\n4 - Dices una palabra al azar, por ejemplo \"¿La palabra es patata?\";\n5 - Alexa responderá que no es la palabra correcta y pedirá otra palabra;\n6 - Y en eso sigue repitiendo los pasos 4 y 5, hasta que quieras que Alexa acierte con la palabra de tu amigo a través del TRUCO.\n\nTRUCO:\nEl truco para que Alexa acierte está en la palabra que precede a la palabra de tu amigo. Esta palabra antecedente debe tener el sentido de tener algo con el número 4, por ejemplo: carro (tiene cuatro ruedas), león (tiene cuatro patas), mesa (tiene cuatro patas) entre otras posibilidades (ver abajo una lista con más palabras ).\n\nEs decir, en el ejemplo de la palabra \"Móvil\" solo la palabra antecedente es \"Carro\", por ejemplo, y así Alexa acertará con la palabra de tu amigo.\n\nPROPINA:\n¡Prueba la skill y aprende a usarla antes de jugar con tu amigo para una mejor experiencia!\n\nMás palabras para realizar el TRUCO:\nPuerta\nPatineta\nCuadriciclo\nDinosaurio\nJirafa\nCamello\nCaballo\ndormitorio\nCuadro\nConejo\nTortuga\nPared\nLeón\nBuey\nVaca\nToldo\nCamioneta\nCachorro\nGato\nCuadrado\nCama\nZumbido\nElefante\nJaguar\nTigre\nBanco\nSilla\nMesa\nCarro",
+          "smallIconUri": "file://assets/images/es-ES_smallIconUri.png",
+          "largeIconUri": "file://assets/images/es-ES_largeIconUri.png"
+        },
+        "es-US": {
+          "summary": "Juega para impresionar a tus amigos: tú y Alexa establecen una conexión cerebral, lo que le permite adivinar la palabra que dice tu amigo.",
+          "examplePhrases": [
+            "Alexa, abre adivina la palabra de mi amigo"
+          ],
+          "keywords": [
+            "adivinar",
+            "palabra",
+            "amigo",
+            "magia",
+            "misterio",
+            "pacto",
+            "conexión",
+            "cerebro"
+          ],
+          "name": "Adivina la palabra de mi amigo",
+          "description": "** LECTURA ESENCIAL PARA ENTENDER CÓMO FUNCIONA LA SKILL **\nJuega para impresionar a tus amigos: tú y Alexa establecen una conexión cerebral, lo que le permite adivinar la palabra que dice tu amigo. Tu amigo te susurra una palabra al oído y tú le dices palabras al azar a Alexa, incluida la palabra correcta, hasta que Alexa le da un TRUCO establecido.\n\nFunciona así:\n1 - Activas la Skill: \"Alexa, adivina la palabra de mi amigo\";\n2 - Alexa le pide a tu amigo que te susurre una palabra (supongamos que dijo la palabra \"Móvil\");\n3 - Alexa realiza una \"conexión cerebral\", y al establecerla te pide que digas palabras al azar;\n4 - Dices una palabra al azar, por ejemplo \"¿La palabra es patata?\";\n5 - Alexa responderá que no es la palabra correcta y pedirá otra palabra;\n6 - Y en eso sigue repitiendo los pasos 4 y 5, hasta que quieras que Alexa acierte con la palabra de tu amigo a través del TRUCO.\n\nTRUCO:\nEl truco para que Alexa acierte está en la palabra que precede a la palabra de tu amigo. Esta palabra antecedente debe tener el sentido de tener algo con el número 4, por ejemplo: carro (tiene cuatro ruedas), león (tiene cuatro patas), mesa (tiene cuatro patas) entre otras posibilidades (ver abajo una lista con más palabras ).\n\nEs decir, en el ejemplo de la palabra \"Móvil\" solo la palabra antecedente es \"Carro\", por ejemplo, y así Alexa acertará con la palabra de tu amigo.\n\nPROPINA:\n¡Prueba la skill y aprende a usarla antes de jugar con tu amigo para una mejor experiencia!\n\nMás palabras para realizar el TRUCO:\nPuerta\nPatineta\nCuadriciclo\nDinosaurio\nJirafa\nCamello\nCaballo\ndormitorio\nCuadro\nConejo\nTortuga\nPared\nLeón\nBuey\nVaca\nToldo\nCamioneta\nCachorro\nGato\nCuadrado\nCama\nZumbido\nElefante\nJaguar\nTigre\nBanco\nSilla\nMesa\nCarro",
+          "smallIconUri": "file://assets/images/es-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/es-US_largeIconUri.png"
+        },
+        "en-GB": {
+          "summary": "Play to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says.",
+          "examplePhrases": [
+            "Alexa, open guess my friend\u0027s word",
+            "Alexa, start guess my friend\u0027s word",
+            "Alexa, play guess my friend\u0027s word"
+          ],
+          "keywords": [
+            "guess",
+            "word",
+            "friend",
+            "magic",
+            "mystery",
+            "pact",
+            "brain",
+            "connect"
+          ],
+          "name": "Guess my friend\u0027s word",
+          "description": "** ESSENTIAL READING TO UNDERSTAND HOW SKILL WORKS**\nPlay to impress your friends: You and Alexa establish a brain connection, which allows her to guess the word your friend says. Your friend whispers a word in your ear and you quote random words to Alexa, including the correct word, until Alexa hits it with an established TRICK.\n\nIt works like this:\n1 - You activate the Skill: \"Alexa, guess my friend\u0027s word\";\n2 - Alexa asks your friend to whisper a word to you (let\u0027s assume he said the word \"Phone\");\n3 - Alexa stages a \"brain connection\", and when establishing it asks you to say random words;\n4 - You say a random word, for example \"Is the word potato?\";\n5 - Alexa will respond that it is not the correct word and will ask for another word;\n6 - And in that steps 4 and 5 keep repeating, until you want Alexa to hit your friend\u0027s word through the TRICK.\n\nTRICK:\nThe trick for Alexa to get it right is in the word preceding your friend\u0027s word. This antecedent word must have the sense of having something with the number 4, for example: car (has four wheels), lion (has four legs), table (has four legs) among other possibilities (see below for a list with more words ).\n\nThat is, in the example of the word \"Phone\" the antecedent word can be \"Car\", for example, and so Alexa will hit the word of your friend.\n\nTIP:\nTest the skill and learn to use it before playing the game with your friend for a better experience!\n\nMore words to perform the TRICK:\nDoor\nSkate\nQuadricycle\nDinosaur\nGiraffe\nCamel\nHorse\nRoom\nFrame\nRabbit\nTurtle\nWall\nLion\nOx\nCow\nAwning\nVan\nDog\nCat\nSquare\nBed\nDrone\nElephant\nJaguar\nTiger\nSeat\nChair\nDesk\nCar",
+          "smallIconUri": "file://assets/images/en-GB_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-GB_largeIconUri.png"
+        },
+        "es-MX": {
+          "summary": "Juega para impresionar a tus amigos: tú y Alexa establecen una conexión cerebral, lo que le permite adivinar la palabra que dice tu amigo.",
+          "examplePhrases": [
+            "Alexa, abre adivina la palabra de mi amigo"
+          ],
+          "keywords": [
+            "adivinar",
+            "palabra",
+            "amigo",
+            "magia",
+            "misterio",
+            "pacto",
+            "conexión",
+            "cerebro"
+          ],
+          "name": "Adivina la palabra de mi amigo",
+          "description": "** LECTURA ESENCIAL PARA ENTENDER CÓMO FUNCIONA LA SKILL **\nJuega para impresionar a tus amigos: tú y Alexa establecen una conexión cerebral, lo que le permite adivinar la palabra que dice tu amigo. Tu amigo te susurra una palabra al oído y tú le dices palabras al azar a Alexa, incluida la palabra correcta, hasta que Alexa le da un TRUCO establecido.\n\nFunciona así:\n1 - Activas la Skill: \"Alexa, adivina la palabra de mi amigo\";\n2 - Alexa le pide a tu amigo que te susurre una palabra (supongamos que dijo la palabra \"Móvil\");\n3 - Alexa realiza una \"conexión cerebral\", y al establecerla te pide que digas palabras al azar;\n4 - Dices una palabra al azar, por ejemplo \"¿La palabra es patata?\";\n5 - Alexa responderá que no es la palabra correcta y pedirá otra palabra;\n6 - Y en eso sigue repitiendo los pasos 4 y 5, hasta que quieras que Alexa acierte con la palabra de tu amigo a través del TRUCO.\n\nTRUCO:\nEl truco para que Alexa acierte está en la palabra que precede a la palabra de tu amigo. Esta palabra antecedente debe tener el sentido de tener algo con el número 4, por ejemplo: carro (tiene cuatro ruedas), león (tiene cuatro patas), mesa (tiene cuatro patas) entre otras posibilidades (ver abajo una lista con más palabras ).\n\nEs decir, en el ejemplo de la palabra \"Móvil\" solo la palabra antecedente es \"Carro\", por ejemplo, y así Alexa acertará con la palabra de tu amigo.\n\nPROPINA:\n¡Prueba la skill y aprende a usarla antes de jugar con tu amigo para una mejor experiencia!\n\nMás palabras para realizar el TRUCO:\nPuerta\nPatineta\nCuadriciclo\nDinosaurio\nJirafa\nCamello\nCaballo\ndormitorio\nCuadro\nConejo\nTortuga\nPared\nLeón\nBuey\nVaca\nToldo\nCamioneta\nCachorro\nGato\nCuadrado\nCama\nZumbido\nElefante\nJaguar\nTigre\nBanco\nSilla\nMesa\nCarro",
+          "smallIconUri": "file://assets/images/es-MX_smallIconUri.png",
+          "largeIconUri": "file://assets/images/es-MX_largeIconUri.png"
         }
       },
       "automaticDistribution": {
-        "sourceLocaleForLanguages": [],
         "isActive": false
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "1 - Say \"Alexa, abra adivinhe a palavra do meu amigo\" \n2 - Agree with \"Yes\".\n2 - Say a random word.\n3 - To make Alexa say that word is correct, you may speak a previous word that is correlate with number 4, example: \"carro\" or \"car\", because car have 4 wheels.",
+      "testingInstructions": "1 - Say \"Alexa, open guess my friend\u0027s word\" \n2 - Agree with \"Yes\".\n2 - Say a random word.\n3 - To make Alexa say that word is correct, you may speak a previous word that is correlate with number 4, example: \"carro\" or \"car\", because car have 4 wheels.",
       "category": "MYSTERY_GAMES",
       "distributionMode": "PUBLIC",
+      "automaticClonedLocale": {
+        "locales": [
+          {
+            "source": "en-US"
+          },
+          {
+            "source": "es-ES"
+          }
+        ]
+      },
       "distributionCountries": []
     },
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:us-east-1:104083640496:function:4320f8a8-18de-4663-b184-e88fb0bc9189:Release_1"
+          "uri": "arn:aws:lambda:us-east-1:104083640496:function:4320f8a8-18de-4663-b184-e88fb0bc9189:Release_3"
         },
         "interfaces": [],
         "regions": {
           "EU": {
             "endpoint": {
-              "uri": "arn:aws:lambda:eu-west-1:104083640496:function:4320f8a8-18de-4663-b184-e88fb0bc9189:Release_1"
+              "uri": "arn:aws:lambda:eu-west-1:104083640496:function:4320f8a8-18de-4663-b184-e88fb0bc9189:Release_3"
             }
           },
           "NA": {
             "endpoint": {
-              "uri": "arn:aws:lambda:us-east-1:104083640496:function:4320f8a8-18de-4663-b184-e88fb0bc9189:Release_1"
+              "uri": "arn:aws:lambda:us-east-1:104083640496:function:4320f8a8-18de-4663-b184-e88fb0bc9189:Release_3"
             }
           },
           "FE": {
             "endpoint": {
-              "uri": "arn:aws:lambda:us-west-2:104083640496:function:4320f8a8-18de-4663-b184-e88fb0bc9189:Release_1"
+              "uri": "arn:aws:lambda:us-west-2:104083640496:function:4320f8a8-18de-4663-b184-e88fb0bc9189:Release_3"
             }
           }
         }
@@ -61,7 +241,15 @@
     "privacyAndCompliance": {
       "allowsPurchases": true,
       "locales": {
-        "pt-BR": {}
+        "en-US": {},
+        "en-CA": {},
+        "pt-BR": {},
+        "en-IN": {},
+        "en-AU": {},
+        "es-ES": {},
+        "es-US": {},
+        "en-GB": {},
+        "es-MX": {}
       },
       "containsAds": false,
       "isExportCompliant": true,

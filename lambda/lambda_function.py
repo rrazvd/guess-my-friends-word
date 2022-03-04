@@ -6,6 +6,7 @@
 # This sample is built using the handler classes approach in skill builder.
 import logging
 import ask_sdk_core.utils as ask_utils
+import json
 
 from ask_sdk_core.skill_builder import SkillBuilder
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
@@ -28,10 +29,14 @@ class LaunchRequestHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         set_session_attribute(handler_input, "last_status", StatusCode.ER_SUCCESS_NO_MATCH.value)
         set_session_attribute(handler_input, "skill_state", "onStart")
-        speak_output =  ('Vamos lá! <break time="0.3s"/> Peça para seu amigo te falar a palavra no ouvido. '
-        '<amazon:effect name="whispered">Ah, fala pra ele falar bem baixinho pra eu não ouvir, '
-        'enquanto isso eu tou aqui esperando alguns segundinhos...</amazon:effect>'
-        '<break time="3s"/> Nós já podemos começar?')
+        
+        locale = handler_input.request_envelope.request.locale
+        with open("language_strings.json") as language_data:
+            language_prompts = json.load(language_data)
+            set_session_attribute(handler_input, "prompts", language_prompts[locale[:2]])
+        
+        prompts = get_session_attribute(handler_input, "prompts")
+        speak_output =  prompts['LAUNCH_RESPONSE']
 
         return (
             handler_input.response_builder
@@ -50,38 +55,31 @@ class YesOrNoIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         skill_state = get_session_attribute(handler_input, "skill_state")
+        prompts = get_session_attribute(handler_input, "prompts")
         
         if (skill_state == "onStart"):
             if ask_utils.get_intent_name(handler_input) == "AMAZON.YesIntent":
-                speak_output = ('Certo! Vamos dar início aos procedimentos. '
-                'Preciso de um momento pois irei conectar ao seu cérebro para fazer o download de suas redes neurais! '
-                '<audio src="soundbank://soundlibrary/computers/typing/typing_05"/> Concentre-se... '
-                '<audio src="soundbank://soundlibrary/computers/typing/typing_05"/> '
-                '<audio src="soundbank://soundlibrary/computers/beeps_tones/beeps_tones_02"/> '
-                '<audio src="soundbank://soundlibrary/computers/beeps_tones/beeps_tones_02"/> '
-                '<audio src="soundbank://soundlibrary/computers/beeps_tones/beeps_tones_03"/> '
-                'Pareamento cerebral concluído com sucesso. Estou devidamente pronta. Diga as palavras aleatoriamente e te direi qual é a palavra do seu amigo!')
-                
+                speak_output =  prompts['PAIRING_RESPONSE']
                 set_session_attribute(handler_input, "skill_state", "onAsk")
             else:
-                speak_output = 'Vou aguardar só mais um pouquinho. <break time="3s"/> Ele já te sussurrou?'
+                speak_output =  prompts['AWAITING_RESPONSE']
         
         elif (skill_state == "onCheck"):
             if ask_utils.get_intent_name(handler_input) == "AMAZON.YesIntent":
-                speak_output = 'Eu sou muito boa nisso! Quer jogar novamente?'
+                speak_output =  prompts['ASK_PLAY_AGAIN']
                 set_session_attribute(handler_input, "skill_state", "onPlayAgain")
             else:
-                speak_output = 'Poxa! Não costumo errar assim, quer me dar outra chance?'
+                speak_output =  prompts['ASK_ANOTHER_CHANCE']
                 set_session_attribute(handler_input, "skill_state", "onRetry")
                 set_session_attribute(handler_input, "last_status", StatusCode.ER_SUCCESS_NO_MATCH.value)
                 
         elif (skill_state == "onPlayAgain"):
             if ask_utils.get_intent_name(handler_input) == "AMAZON.YesIntent":
-                speak_output = 'Então vamos! Diga as palavras aleatoriamente e te direi qual é a palavra do seu amigo!'
+                speak_output = prompts['PLAY_AGAIN_RESPONSE']
                 set_session_attribute(handler_input, "skill_state", "onAsk")
                 set_session_attribute(handler_input, "last_status", StatusCode.ER_SUCCESS_NO_MATCH.value)
             else:
-                speak_output = 'Tudo bem. Até o próximo pareamento de cérebros. Tchauzinho!'
+                speak_output = prompts['NOT_PLAY_AGAIN_RESPONSE']
                 return (
                     handler_input.response_builder
                         .speak(speak_output)
@@ -90,17 +88,17 @@ class YesOrNoIntentHandler(AbstractRequestHandler):
         
         elif (skill_state == "onRetry"):
             if ask_utils.get_intent_name(handler_input) == "AMAZON.YesIntent":
-                speak_output = 'Êba! Me diga outra palavra!'
+                speak_output = prompts['RETRY_RESPONSE']
                 set_session_attribute(handler_input, "skill_state", "onAsk")
             else:
-                speak_output = ('Tudo bem. Mas em minha defesa, tudo indica que houve uma perda de pacotes ao realizar o download das suas redes neurais! '
-                'Tchau tchau!' )
+                speak_output = prompts['NO_RETRY_RESPONSE']
                 
                 return (
                     handler_input.response_builder
                         .speak(speak_output)
                         .response
                 )
+        
         
         return (
             handler_input.response_builder
@@ -121,12 +119,13 @@ class AskWordIntentHandler(AbstractRequestHandler):
         slot = ask_utils.request_util.get_slot(handler_input, "keyWord")
         current_status = slot.resolutions.resolutions_per_authority[0].status.code.value
         last_status = get_session_attribute(handler_input, "last_status")
+        prompts = get_session_attribute(handler_input, "prompts")
         
         if (last_status == StatusCode.ER_SUCCESS_MATCH.value):
-            speak_output = "A palavra do seu amigo é " + slot.value + ". Eu acertei?"
+            speak_output = prompts['WORD_IS_RESPONSE'] + slot.value + prompts['IS_RIGHT_RESPONSE']
             set_session_attribute(handler_input, "skill_state", "onCheck")
         else:
-            speak_output = slot.value + " não é a palavra. Me diga outra palavra."
+            speak_output = slot.value + prompts['WORD_IS_NOT_RESPONSE']
             set_session_attribute(handler_input, "last_status", current_status)
 
         return (
@@ -144,12 +143,13 @@ class HelpIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = ('Essa skill tem o objetivo de impressionar um amigo seu adivinhando a palavra que ele falar pra você através de um truque estabelecido. '
-        'Você pode procurar mais informações através da descrição dessa skill no aplicativo da Alexa.')
+        prompts = get_session_attribute(handler_input, "prompts")
+        speak_output = prompts['HELP_RESPONSE']
 
         return (
             handler_input.response_builder
                 .speak(speak_output)
+                .ask(speak_output)
                 .response
         )
 
@@ -163,7 +163,8 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Tchauzinho!"
+        prompts = get_session_attribute(handler_input, "prompts")
+        speak_output = prompts['GOODBYE_RESPONSE']
 
         return (
             handler_input.response_builder
@@ -180,8 +181,9 @@ class FallbackIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         logger.info("In FallbackIntentHandler")
-        speech = "Hum, eu não entendi. Você pode falar a palavra e eu direi se é a que seu amigo falou ou não."
-        reprompt = "Eu não ouvi, pode dizer a palavra?"
+        prompts = get_session_attribute(handler_input, "prompts")
+        speech = prompts['FALLBACK_SPEECH']
+        reprompt = prompts['FALLBACK_REPROMPT']
 
         return handler_input.response_builder.speak(speech).ask(reprompt).response
 
@@ -212,7 +214,8 @@ class IntentReflectorHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         intent_name = ask_utils.get_intent_name(handler_input)
-        speak_output = "Eu não entendi, sim ou não?"
+        prompts = get_session_attribute(handler_input, "prompts")
+        speak_output = prompts['YES_OR_NO_RESPONSE']
 
         return (
             handler_input.response_builder
@@ -235,7 +238,8 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         # type: (HandlerInput, Exception) -> Response
         logger.error(exception, exc_info=True)
 
-        speak_output = "Desculpa, eu não entendi. Tente novamente."
+        prompts = get_session_attribute(handler_input, "prompts")
+        speak_output = prompts['CATCH_RESPONSE']
 
         return (
             handler_input.response_builder

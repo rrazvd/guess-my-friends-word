@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "adivinhe a palavra do meu amigo",
+      "invocationName": "adivina la palabra de mi amigo",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -32,22 +32,24 @@
             }
           ],
           "samples": [
-            "{keyWord} é a palavra do meu amigo",
-            "a palavra do meu amigo é {keyWord}",
+            "{keyWord} palabra",
+            "la palabra de mi amigo es {keyWord}",
+            "{keyWord} es la palabra de mi amigo",
             "{keyWord}",
-            "é a palavra {keyWord}",
-            "palavra {keyWord}",
-            "{keyWord} é a palavra",
-            "a palavra é {keyWord} "
+            "es la palabra {keyWord}",
+            "palabra {keyWord}",
+            "{keyWord} es la palabra",
+            "la palabra es {keyWord}"
           ]
         },
         {
           "name": "AMAZON.YesIntent",
           "samples": [
-            "acertou",
-            "já",
-            "quero",
-            "podemos"
+            "ya",
+            "quiero",
+            "podemos",
+            "jugar",
+            "empezar"
           ]
         },
         {
@@ -60,14 +62,14 @@
           "values": [
             {
               "name": {
-                "value": "Quatro"
+                "value": "Cuatro"
               }
             },
             {
               "name": {
-                "value": "Porta",
+                "value": "Puerta",
                 "synonyms": [
-                  "Portão"
+                  "Portón"
                 ]
               }
             },
@@ -82,83 +84,78 @@
             },
             {
               "name": {
-                "value": "Quadriciclo"
+                "value": "Cuadriciclo"
               }
             },
             {
               "name": {
-                "value": "Dinossauro"
+                "value": "Dinosaurio"
               }
             },
             {
               "name": {
-                "value": "Girafa"
+                "value": "Jirafa"
               }
             },
             {
               "name": {
-                "value": "Camelo",
+                "value": "Camello",
                 "synonyms": [
-                  "Dromedário"
+                  "Dromedario"
                 ]
               }
             },
             {
               "name": {
-                "value": "Cavalo",
+                "value": "Caballo",
                 "synonyms": [
                   "Burro",
-                  "Pônei",
-                  "Jumento",
-                  "Égua"
+                  "Poni",
+                  "Yegua"
                 ]
               }
             },
             {
               "name": {
-                "value": "Quarto"
+                "value": "Cuarto"
               }
             },
             {
               "name": {
-                "value": "Quadro"
+                "value": "Cuadro"
               }
             },
             {
               "name": {
-                "value": "Coelho",
+                "value": "Conejo",
                 "synonyms": [
-                  "Lebre"
+                  "Liebre"
                 ]
               }
             },
             {
               "name": {
-                "value": "Tartaruga",
+                "value": "Tortuga"
+              }
+            },
+            {
+              "name": {
+                "value": "Pared"
+              }
+            },
+            {
+              "name": {
+                "value": "León",
                 "synonyms": [
-                  "Jabuti",
-                  "Cágado"
+                  "Leona"
                 ]
               }
             },
             {
               "name": {
-                "value": "Parede"
-              }
-            },
-            {
-              "name": {
-                "value": "Leão",
+                "value": "Buey",
                 "synonyms": [
-                  "Leoa"
-                ]
-              }
-            },
-            {
-              "name": {
-                "value": "Boi",
-                "synonyms": [
-                  "Bezerro"
+                  "Ternero"
                 ]
               }
             },
@@ -166,7 +163,7 @@
               "name": {
                 "value": "Vaca",
                 "synonyms": [
-                  "Bezerra"
+                  "Novilla"
                 ]
               }
             },
@@ -177,14 +174,14 @@
             },
             {
               "name": {
-                "value": "Kombi"
+                "value": "Camioneta"
               }
             },
             {
               "name": {
                 "value": "Cachorro",
                 "synonyms": [
-                  "Cão"
+                  "Perro"
                 ]
               }
             },
@@ -195,9 +192,9 @@
             },
             {
               "name": {
-                "value": "Quadrado",
+                "value": "Cuadrado",
                 "synonyms": [
-                  "Quadrilátero"
+                  "Cuadrilátero"
                 ]
               }
             },
@@ -210,7 +207,7 @@
               "name": {
                 "value": "Drone",
                 "synonyms": [
-                  "Quadricóptero"
+                  "Cuadricóptero"
                 ]
               }
             },
@@ -218,15 +215,15 @@
               "name": {
                 "value": "Elefante",
                 "synonyms": [
-                  "Mamute"
+                  "Mamut"
                 ]
               }
             },
             {
               "name": {
-                "value": "Onça",
+                "value": "Jaguar",
                 "synonyms": [
-                  "Guepardo"
+                  "Leopardo"
                 ]
               }
             },
@@ -239,13 +236,13 @@
               "name": {
                 "value": "Banco",
                 "synonyms": [
-                  "Banqueta"
+                  "Heces"
                 ]
               }
             },
             {
               "name": {
-                "value": "Cadeira"
+                "value": "Silla"
               }
             },
             {
@@ -264,5 +261,5 @@
       ]
     }
   },
-  "version": "2"
+  "version": "4"
 }
